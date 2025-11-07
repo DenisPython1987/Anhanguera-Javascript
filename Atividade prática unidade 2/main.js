@@ -4,6 +4,9 @@ let figura2 = document.getElementById("figura2");
 let contexto1 = figura1.getContext('2d');
 let contexto2 = figura2.getContext('2d');
 
+let indiceCor = 0;
+var cores = ['#000', '#00f', '#33f', '#fff']
+
 const raio = 30;
 let a = 50;
 let b = 50;
@@ -17,14 +20,15 @@ let db = -2;
 function figura_1(){
     contexto1.beginPath();
     contexto1.arc(x, y, raio, 0, 2*Math.PI);
-    contexto1.fillStyle = '#000';
+    contexto1.fillStyle = cores[indiceCor];
     contexto1.fill();
+   
 }
 
 function figura_2(){
     contexto2.beginPath();    
     contexto2.arc(a, b, raio, 0, 2*Math.PI);
-    contexto2.fillStyle = '#00f';
+    contexto2.fillStyle = cores[indiceCor];
     contexto2.fill();
 }
 
@@ -44,6 +48,8 @@ function atualizar(){
 
     figura_1();
     figura_2();
+
+    indiceCor = (indiceCor + 1) % cores.length;
 
     requestAnimationFrame(atualizar);
 }
