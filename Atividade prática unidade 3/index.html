@@ -7,7 +7,36 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <div id="corpo">
+        <label for="computador" id="rotulo_comp">Jogada do computador</label>
+        <p id="computador"></p>
+        <br>
+        <hr>
+        
+        <label for="usuario" id="rotulo_usu">Sua Jogada</label>
+        <p id="usuario"></p>
+        <br>
+        <hr>
 
+        <label for="resultado" id="rotulo_resu">Resultado</label>
+        <p id="resultado""></p>
+        <br>
+        <hr>
+
+        <input type="radio" id="papel" name="grupo-opcoes" value="papel">
+        <label for="Papel">Papel</label>
+        <br>
+        
+        <input type="radio" name="grupo-opcoes" id="tesoura" value="tesoura">
+        <label for="Tesoura">Tesoura</label>
+        <br>
+        
+        <input type="radio" name="grupo-opcoes" id="pedra" value="pedra">
+        <label for="Pedra">Pedra</label>
+        <br>
+
+        <button type="button" id="button">Jogar</button>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

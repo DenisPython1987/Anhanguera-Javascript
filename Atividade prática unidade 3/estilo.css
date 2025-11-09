@@ -1,0 +1,39 @@
+*{
+    padding: 1%;
+    margin: 1%;
+    background-color: gray;
+}
+
+#corpo{
+    width: 50%;
+    margin: 0 auto;
+}
+
+label{
+    text-align: center;
+    color: blue;
+    font-size: 15;
+}
+
+.grupo_opcoes{
+    text-align: center;
+}
+
+p{
+    font-size: 15;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+}
+
+hr{
+    border: none;
+    background-color: black;
+    height: 1px;
+}
+
+button{
+    color: white;
+    background-color: red;
+    font-size: 20;
+    margin: auto;
+}
