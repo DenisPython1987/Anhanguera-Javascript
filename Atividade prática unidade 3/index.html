@@ -7,22 +7,34 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+
+    <!--Aqui eu crio uma div para abarcar o código-->
     <div id="corpo">
+
+        <!--Aqui eu crio um label e um p para mostrar a escolha do computador-->
         <label for="computador" id="rotulo_comp">Jogada do computador</label>
         <p id="computador"></p>
         <br>
         <hr>
         
+        <!--Aqui eu crio um label e um p para mostrar a escolha do jogador-->
         <label for="usuario" id="rotulo_usu">Sua Jogada</label>
         <p id="usuario"></p>
         <br>
         <hr>
 
+        <!--Aqui eu crio um label e um p para mostrar o resultado-->
         <label for="resultado" id="rotulo_resu">Resultado</label>
         <p id="resultado""></p>
         <br>
         <hr>
 
+        <!--Aqui eu crio um label para pedri ao usuário para escolher uma opção-->
+        <label for="radio">Escolha uma opção</label>
+        <br>
+
+        <!--Aqui eu crio um grupo de radio buttons para oferecer a escolha
+        de uma opção-->
         <input type="radio" id="papel" name="grupo-opcoes" value="papel">
         <label for="Papel">Papel</label>
         <br>
@@ -35,6 +47,7 @@
         <label for="Pedra">Pedra</label>
         <br>
 
+        <!--Aqui eu crio o botão para o usuário jogar-->
         <button type="button" id="button">Jogar</button>
     </div>
     <script src="main.js"></script>
