@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "consulta_cep": {
+    "consulta-cep": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -56,10 +66,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "consulta_cep:build:production"
+              "buildTarget": "consulta-cep:build:production"
             },
             "development": {
-              "buildTarget": "consulta_cep:build:development"
+              "buildTarget": "consulta-cep:build:development"
             }
           },
           "defaultConfiguration": "development"

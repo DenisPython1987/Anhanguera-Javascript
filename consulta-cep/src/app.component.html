@@ -1,0 +1,16 @@
+<h2>Consultar CEP</h2>
+
+<label>Digite o CEP:</label>
+<input type="text" #cepInput placeholder="Ex: 01001000">
+<button (click)="buscarCEP(cepInput.value)">Buscar</button>
+
+<hr>
+
+<p *ngIf="mensagemErro" style="color:red;">{{ mensagemErro }}</p>
+
+<div *ngIf="logradouro || cidade || estado">
+  <p><strong>Logradouro:</strong> {{ logradouro }}</p>
+  <p><strong>Bairro:</strong> {{ bairro }}</p>
+  <p><strong>Cidade:</strong> {{ cidade }}</p>
+  <p><strong>Estado:</strong> {{ estado }}</p>
+</div>
